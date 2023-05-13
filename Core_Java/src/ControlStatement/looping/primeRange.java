@@ -6,7 +6,7 @@ public class primeRange {
 	
 	public static void main(String[] args) {
 
-		int lower, upper,c=0;
+		int lower, upper;
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the range of number:");
@@ -16,8 +16,6 @@ public class primeRange {
 	    for (int i = lower; i <= upper; i++) 
 	       if (isPrime (i)) {
 	        System.out.print(i +" , ");
-//	        c=c++;
-//	        System.out.println(c);
 	       }
 	   }
 
