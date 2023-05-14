@@ -23,7 +23,7 @@ public class primeRange {
 	   {
 
 	     // 0, 1 negative numbers are not prime
-	     if (n < 2)
+	     if (n <2)
 	       return false;
 
 	     // checking the number of divisors b/w 1 and the number n-1
