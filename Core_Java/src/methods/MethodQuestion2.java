@@ -19,10 +19,9 @@ public class MethodQuestion2 {
 	
 	static void input() {
 		 
-		int amount,P,T,R;
+		int P,T;
+		float R;
 		Scanner sc =new Scanner(System.in);
-		System.out.println("Enter amount:");
-		amount = sc.nextInt();
 		
 		System.out.println("Enter value of P:");
 		P = sc.nextInt();
@@ -31,18 +30,17 @@ public class MethodQuestion2 {
 		T = sc.nextInt();
 		
 		System.out.println("Enter value of R:");
-		R = sc.nextInt();
+		R = sc.nextFloat();
 		
-		processing(amount,P,T,R);
+		processing(P,T,R);
 		
 	}
 	
-	static void processing(double amount, int P, int T, int R) {
+	static void processing(int P, int T, float R) {
 		
-		double SI;
+		double SI,amount;
 		SI = (P*T*R)/100;
-		amount =amount +SI*amount;
-		
+		amount =P*(1+ R*T);
 		output(amount,SI);
 		
 	}
