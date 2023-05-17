@@ -39,8 +39,8 @@ public class DisplayTable {
 	            System.out.println(" ");
 	       }
 	            
-	            System.out.println("Roll No.|   Student Name   | Percentage |   Remarks    |" );
-	            System.out.println("-----------------------------------------------------------");
+	            System.out.println("Roll No.|   Student Name    | Percentage |   Remarks    |" );
+	            System.out.println("----------------------------------------------------------S");
 
 	            for(int i=0; i<size; i++){
 	            percentage = (science[i] + social[i])/2.0;
