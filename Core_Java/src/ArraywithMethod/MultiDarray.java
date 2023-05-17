@@ -36,7 +36,7 @@ public class MultiDarray {
 			System.out.println();
 		}
 		
-		
+		System.out.println(mat[0][1]);
 		
 	}
 }
