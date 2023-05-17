@@ -10,7 +10,10 @@ public class MultiCalculation {
 		
 		int mat3[][]= new int[3][3];
 		
+		System.out.println(mat1[2][1]);
+		
 		//Addition
+		
 		
 		for(int i=0;i<3;i++) {
 			for(int j=0; j<3;j++) {
