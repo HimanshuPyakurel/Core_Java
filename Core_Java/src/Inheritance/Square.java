@@ -6,7 +6,6 @@ public class Square extends Rectangle{
 
 	Square(int length, int breadth) {
 		super(length, breadth);
-		// TODO Auto-generated constructor stub
 	}
 	
 	public static void main(String[] args) {
@@ -36,7 +35,11 @@ public class Square extends Rectangle{
 			
 		}
 		
-		
+		for(Square  sq : square) {
+			
+			System.out.println("Length = "+sq.length);
+			System.out.println("breadth = "+sq.breadth);
+		}
 		
 		
 	}
