@@ -7,6 +7,7 @@ public class InterfaceTest {
 		us.addUser();
 		us.deleteUser();
 	    us.print();
+	    us.get
 		
 	}
 

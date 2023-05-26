@@ -1,6 +1,7 @@
 package Abstraction;
 
-public interface CommonService {
+
+public interface CommonService{
 	
 	void print();
 
