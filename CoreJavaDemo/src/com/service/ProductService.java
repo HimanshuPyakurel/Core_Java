@@ -1,7 +1,5 @@
 package com.service;
 
-import java.util.List;
-
 import com.model.Product;
 
 public interface ProductService {
@@ -10,6 +8,6 @@ public interface ProductService {
 	
 	void deleteProduct(int index);
 	
-	List<Product> getAllProduct(); //product's list
+	void getAllProduct(Product product); 
 	
 }
