@@ -7,7 +7,6 @@ public class Product {
 	private String company;
 	private int price;
 	
-	
 	//default constructor
 	public Product() {} 
 	
