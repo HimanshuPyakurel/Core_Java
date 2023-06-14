@@ -6,17 +6,20 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernateDB?createDatabaseIfNotExist=true</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/Table?createDatabaseIfNotExist=true</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password"></property>
         <property name="hibernate.connection.pool_size">1</property>
         <property name="hibernate.current_session_context_class">thread</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-		<property name="hibernate.hbm2ddl.auto">update</property>  <!-- create,update,validate -->
+		<property name="hibernate.hbm2ddl.auto">create</property>  <!-- create,update,validate -->
 		
 	
 		<!-- Entity mapping -->
         <mapping class="com.model.Product" />
+        <mapping class="com.model.Car" />
+        <mapping class="com.model.Employee" />
+        
     </session-factory>
 </hibernate-configuration>
