@@ -1,10 +1,13 @@
 package com.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -21,6 +24,17 @@ public class Employee {
 	@JoinColumn(name="carId") //FK
 	private Car car;
 	
+	@OneToMany(mappedBy = "employee")
+	private List<Phone> phoneList;
+	
+	
+	
+	public List<Phone> getPhoneList() {
+		return phoneList;
+	}
+	public void setPhoneList(List<Phone> phoneList) {
+		this.phoneList = phoneList;
+	}
 	public int getId() {
 		return id;
 	}
