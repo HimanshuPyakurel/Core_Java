@@ -1,7 +1,9 @@
 package com.model;
 
 import java.util.Arrays;
+import java.util.List;
 
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -10,9 +12,10 @@ public class MappingTest {
 
 	public static void main(String[] args) {
 		
-		oneToOne();
-		oneToMany();
-		manyTomany();
+//		oneToOne();
+//		oneToMany();
+//		manyTomany();
+		getEmp();
 	}
 	
 	//OneToOne
@@ -124,5 +127,28 @@ public class MappingTest {
 		
 	}
 
+	static void getEmp() {
+		SessionFactory sf = new Configuration().configure().buildSessionFactory();
+		Session session = sf.openSession();
+		
+		Criteria crt = session.createCriteria(Employee.class);
+		List<Employee> elist = crt.list();
+		
+		for(Employee e: elist) {
+			System.out.println("id = "+e.getId());
+			System.out.println("First Name = "+e.getFname());
+			System.out.println("Last Name = "+e.getLname());
+			System.out.println("Colour= "+e.getCar().getColor());
+			System.out.println("Price= "+e.getCar().getPrice());
+			
+			List<Department> dlist = e.getDeptList();
+			for(Department d: dlist) {
+				System.out.println("Dept. Name = "+d.getName());
+			}
+			
+		}
+		
+		
+	}
 }
 
