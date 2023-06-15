@@ -20,6 +20,7 @@
         <mapping class="com.model.Product" />
         <mapping class="com.model.Car" />
         <mapping class="com.model.Employee" />
+        <mapping class="com.model.Phone" />
         
     </session-factory>
 </hibernate-configuration>
