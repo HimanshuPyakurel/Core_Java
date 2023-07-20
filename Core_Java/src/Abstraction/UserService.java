@@ -14,5 +14,6 @@ public interface UserService extends CommonService {
 	static void getUser() {
 		//common(yei nai hunxa sabailai) impl. for all impl.class
 	}
+	void get();
 	
 }
