@@ -7,12 +7,12 @@ public class Area_Test {
 	public static void main(String[] args) {
 		
 		int count = 1;
-		Area area[] = new Area[4];
+		Shape area[] = new Area[4];
 		Scanner sc = new Scanner(System.in);
 		
 		for(int i = 0; i<4 ;i++) {
 			
-			Area a1 = new Area();
+			Shape a1 = new Area();
 			
 			System.out.println("\t"+count+" Iteratiton");
 			System.out.println("-------------------------------");
