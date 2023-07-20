@@ -23,5 +23,12 @@ public class UserServiceImpl implements UserService{
 		System.out.println("...Printing...");
 	}
 
+
+	@Override
+	public void get() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 }
